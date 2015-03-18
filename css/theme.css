@@ -295,7 +295,7 @@ h2 {font-weight: normal; font-style: normal; font-family: 'Open Sans'; font-size
 
 a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
- a.btn-info, a.btn-success, a.btn-warning, a.btn-danger, a.btn-inverse {color:#ffffff}
+ a.btn-info, a.btn-success, a.btn-warning, a.btn-danger, a.btn-inverse, a.sl_but_read {color:#ffffff}
 
  .btn-secondary, .btn-secondary:hover, a.btn-secondary, a.btn-secondary:hover {color:#323232;}
 
@@ -305,9 +305,9 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
 .btn-primary, .btn-primary:hover, a.btn-primary, a.btn-primary:hover {color:#ffffff;}
 
- .btn-primary {border:1px solid #7e9d31;border-bottom:1px solid #637b27;background-color:#8eb037;background-repeat: repeat-x;background-image:-webkit-gradient(linear, left top, left bottom, from(#8eb037), to(#809e32));background-image:-webkit-linear-gradient(top, #8eb037, #809e32);background-image:-moz-linear-gradient(top, #8eb037, #809e32);background-image:-ms-linear-gradient(top, #8eb037, #809e32);background-image:-o-linear-gradient(top, #8eb037, #809e32);background-image:linear-gradient(top, #8eb037, #809e32);filter: progid:dximagetransform.microsoft.gradient(startColorstr=#8eb037, endColorstr=#809e32, GradientType=0);filter: progid:dximagetransform.microsoft.gradient(enabled=false);}
+ .btn-primary, .sl_but_read {border:1px solid #7e9d31;border-bottom:1px solid #637b27;background-color:#8eb037;background-repeat: repeat-x;background-image:-webkit-gradient(linear, left top, left bottom, from(#8eb037), to(#809e32));background-image:-webkit-linear-gradient(top, #8eb037, #809e32);background-image:-moz-linear-gradient(top, #8eb037, #809e32);background-image:-ms-linear-gradient(top, #8eb037, #809e32);background-image:-o-linear-gradient(top, #8eb037, #809e32);background-image:linear-gradient(top, #8eb037, #809e32);filter: progid:dximagetransform.microsoft.gradient(startColorstr=#8eb037, endColorstr=#809e32, GradientType=0);filter: progid:dximagetransform.microsoft.gradient(enabled=false);}
 
- .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {background-color:#7e9d31;}
+ .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled], .sl_but_read:hover {background-color:#7e9d31;}
 
 #divHeaderText {border-color: rgb(51, 51, 51); padding-top: 143px; padding-bottom: 0px;;;;}
 
@@ -321,7 +321,7 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
 #headerSeparator{margin-top: 0px; border-top-color: rgb(51, 51, 51); border-top-width: 0px; border-top-style: solid;}
 
-h3,.page-content h3 a {font-weight: normal; font-style: normal; font-family: 'Open Sans'; font-size: 24px; line-height: 36px; text-transform: none;}
+h3,.page-content h3 a {font-weight: normal; font-style: normal; font-family: 'Open Sans'; font-size: 24px; line-height: 36px; text-transform: none; color: #333;}
 
 h4,.page-content h4 a {font-weight: normal; font-style: normal; font-family: 'Open Sans'; font-size: 21px; line-height: 50px; text-transform: none;}
 
@@ -365,7 +365,7 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'Op
 
 .dropdown-menu li:hover .sub-menu {visibility:visible;}
 
-.ddmenu.nav-pills li a {font-family: Calligraffitti; font-size: 15px; text-shadow: none; line-height: 17px;}
+.ddmenu.nav-pills li a {font-family: 'Bad Script', cursive; font-size: 16px; text-shadow: none; line-height: 17px;}
 
 .ddmenu .dropdown-menu li a{line-height: 26px; font-size: 15px;}
 
@@ -470,6 +470,37 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'Op
 
 }
 
-
-
-
+/*** CUSTOM ***/
+.sl_coms:before, .sl_views:before, .sl_modul:before, .sl_date:before, .sl_cat:before, .sl_faq:before, .sl_last:before, .sl_hits:before, .sl_outs:before, .sl_down:before, .sl_ed2k:before, .sl_http:before, .sl_plus:before, .sl_shop_add:before, .sl_shop_kasse:before, .sl_shop_plus:before, .sl_shop_minus:before, .sl_shop_total:before, .sl_post:before, .sl_votes:before, .sl_favor:before, .sl_f_new:before, .sl_f_old:before, .sl_f_clos:before, .sl_f_last:before, .sl_t_post:before, .sl_t_edit:before, .sl_t_new:before, .sl_t_old:before, .sl_t_pop:before, .sl_t_pold:before, .sl_t_announ:before, .sl_t_hot:before, .sl_t_clos_m:before, .sl_t_clos_a:before, .sl_t_clos_n:before, .sl_t_clos_p:before, .sl_n_day:before, .sl_n_days:before, .sl_n_week:before, .sl_n_act:before, .sl_n_deact:before, .sl_n_info:before, .sl_m_in:before, .sl_m_out:before, .sl_m_save:before {
+  display: none;
+}
+.meta ul,
+.statistic-info{
+    margin: 0;
+}
+.meta i,
+.statistic-info i{
+    color: rgb(132, 164, 51);;
+}
+.meta ul li,
+.statistic-info li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+hr.no-margin{
+    margin: 5px;
+}
+a.sl_but_read{
+    line-height: 20px;
+}
+.sl_but_read:hover{
+    border-color: #7e9d31;
+    opacity: 0.8;
+}
+.entry-content{
+    margin-bottom: 10px;
+}
+.pagination{
+    text-align: center;
+}

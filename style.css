@@ -1,5 +1,7 @@
 @import url(js/bootstrap/css/bootstrap.min.css);
 @import url(js/bootstrap/css/bootstrap-responsive.min.css);
+@import url(js/icons/general/stylesheets/general_foundicons.css);
+@import url(js/icons/social/stylesheets/social_foundicons.css);
 @import url(css/system.css);
 @import url(css/theme.css);
 @import url(css/blocks.css);
