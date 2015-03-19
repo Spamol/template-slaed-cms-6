@@ -475,7 +475,8 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'Op
   display: none;
 }
 .meta ul,
-.statistic-info{
+.statistic-info,
+.navi-menu{
     margin: 0;
 }
 .meta i,
@@ -491,7 +492,10 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'Op
 hr.no-margin{
     margin: 5px;
 }
-a.sl_but_read{
+a.sl_but_read,
+a.sl_but,
+body .navi-menu li a,
+body a.sl_but{
     line-height: 20px;
 }
 .sl_but_read:hover{
@@ -502,5 +506,67 @@ a.sl_but_read{
     margin-bottom: 10px;
 }
 .pagination{
+    text-align: center;
+}
+body a.sl_but_blue,
+body a.sl_but_green{
+    line-height: 20px;
+    color: #fff;
+}
+a.sl_but{
+    color: #333;
+}
+.navi-menu li{
+    display: inline-block;
+    list-style-type: none;
+}
+.block,
+.block a{
+    line-height: 16px;
+}
+.block h3 span{
+    background: #8eb037;
+    color: #fff;
+    padding: 0 10px;
+}
+.block hr{
+    margin: 10px 0;
+}
+.block input{
+    margin-bottom: 0;
+}
+#repblockvoting ul{
+    margin-left: 0;
+}
+#repblockvoting ul li{
+    list-style-type: none;
+    margin: 0 0 15px;
+}
+#repblockvoting form{
+    margin-bottom: 25px;
+}
+#repblockvoting label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+#repblockvoting input{
+    margin: 0;
+    vertical-align: middle;
+}
+#repblockvoting .vote-links{
+    margin-top: 10px;
+}
+#repblockvoting .vote-links a{
+    color: #aaa;
+    font-size: 12px;
+}
+#repblockvoting .vote-links a.sl_votes{
+    float: left;
+}
+#repblockvoting .vote-links a.sl_coms{
+    float: right;
+}
+.banner-top{
     text-align: center;
 }

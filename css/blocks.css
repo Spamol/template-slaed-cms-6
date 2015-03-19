@@ -350,7 +350,7 @@
 /* Стандартные блоки справа */
 /* Общее оформление правых блоков */
 .block {
-	background: #f6f8fa;
+	border: 1px solid #8eb037;
 	height: 1%;
 	padding: 15px;
 	border-radius: 8px;
