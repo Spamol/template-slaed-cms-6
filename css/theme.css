@@ -509,9 +509,16 @@ body a.sl_but{
     text-align: center;
 }
 body a.sl_but_blue,
-body a.sl_but_green{
+body a.sl_but_green,
+body .sl_pnum{
     line-height: 20px;
     color: #fff;
+}
+body .sl_pnum{
+    font-weight: 100;
+}
+body a.sl_pnum:hover{
+    background-color: #a4d682;
 }
 a.sl_but{
     color: #333;
@@ -569,4 +576,66 @@ a.sl_but{
 }
 .banner-top{
     text-align: center;
+}
+.comment:before,
+.comment .com-right .com-top:before,
+.comment:after,
+.comment .com-right .com-top:after {
+    content:"";
+    display:table;
+}
+.comment:after,
+.comment .com-right .com-top:after {
+    clear:both;
+}
+.comment .com-right .com-top{
+    margin-bottom: 10px;
+}
+.comment ul{
+    list-style-type: none;
+    margin: 0;
+}
+.comment .com-left{
+    width: 13%;
+}
+.comment .com-left .min-rate{
+    margin: 5px 0;
+}
+.comment .com-left .fp-user-info{
+    font-size: 13px;
+}
+.comment .com-right{
+    width: 80%;
+}
+.comment .com-right .dropdown{
+    margin-right: 10px;
+    height: 30px;
+}
+.comment .com-right .dropdown a{
+    cursor: pointer;
+}
+.comment .com-right .sl_sig hr{
+    margin: 5px 0;
+}
+.comment .dropdown-form{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    font-size: 12px;
+    padding: 15px;
+    min-width: 150px;
+    list-style: outside none none;
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+    background-clip: padding-box;
+}
+.comment .com-right .carg .cargs{
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 12px;
 }
