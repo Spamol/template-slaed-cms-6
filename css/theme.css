@@ -576,16 +576,20 @@ a.sl_but{
 }
 .banner-top{
     text-align: center;
+    margin-bottom: 10px;
 }
 .comment:before,
 .comment .com-right .com-top:before,
+.meta-foot:before,
 .comment:after,
-.comment .com-right .com-top:after {
+.comment .com-right .com-top:after,
+.meta-foot:after {
     content:"";
     display:table;
 }
 .comment:after,
-.comment .com-right .com-top:after {
+.comment .com-right .com-top:after,
+.meta-foot:after {
     clear:both;
 }
 .comment .com-right .com-top{
@@ -638,4 +642,19 @@ a.sl_but{
     vertical-align: middle;
     margin-left: 10px;
     font-size: 12px;
+}
+.span8 .sl-all-categ > tbody > tr > td{
+    vertical-align: top;
+}
+.span8 .sl-all-categ > tbody > tr > td img{
+    display: none;
+}
+.span8 .sl-all-categ{
+    line-height: 13px;
+}
+.span8 .sl-all-categ td i{
+    font-size: 12px;
+}
+.span8 .sl-all-categ .sl_categ > tbody > tr > td{
+    padding: 0 10px;
 }
