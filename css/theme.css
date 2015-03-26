@@ -570,14 +570,18 @@ a.sl_but{
 #repblockvoting .vote-links{
     margin-top: 10px;
 }
+#repblockvoting i{
+    color: rgb(132, 164, 51);
+}
+#repblockvoting .vote-links,
 #repblockvoting .vote-links a{
     color: #aaa;
     font-size: 12px;
 }
-#repblockvoting .vote-links a.sl_votes{
+#repblockvoting .vote-links .vote-link-vote{
     float: left;
 }
-#repblockvoting .vote-links a.sl_coms{
+#repblockvoting .vote-links .vote-link-comment{
     float: right;
 }
 .banner-top{
