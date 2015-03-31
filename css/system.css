@@ -481,7 +481,6 @@ select.sl_shop, select.sl_money { width: 549px; }
 
 .sl_search { width: 490px; }
 select.sl_search { width: 504px; }
-
 /* Поля форм в блоках */
 .sl_bl_field { width: 148px; }
 
@@ -728,7 +727,7 @@ thead tr .sl_sort_desc { background-image: url(../images/misc/desc.gif); opacity
 	padding: 3px 15px;
 	text-decoration: none !important;
 }
-.sl_menu ul ul a:hover { background-color: #5eb7f3; }
+.sl_menu ul ul a:hover { background-color: #8eb037; }
 .sl_menu li:hover ul { top: 0; opacity: 1; visibility: visible; }
 
 /* Быстрый Ajax редактор */
@@ -814,14 +813,14 @@ thead tr .sl_sort_desc { background-image: url(../images/misc/desc.gif); opacity
 .sl_letter:hover { background: #64b1e1; color: #fff; }
 
 /* Номер */
-.sl_num {
+/*.sl_num {
 	display: inline-block;
 	background-image: url(../images/misc/sprite.png);
 	text-align: left;
 	overflow: hidden;
 	text-indent: -9999px;
 	white-space: nowrap;
-}
+}*/
 
 /* Подсказки jquery slider tooltips */
 .sl_tip {

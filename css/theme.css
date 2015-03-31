@@ -46,6 +46,13 @@ ul#contact-info .field {font-weight:bold;}
 
 ul#contact-info {list-style:none;}
 
+/* Sprites */
+.thd, .ico:before { display: inline-block; background-image: url(../images/misc/sprite.png); }
+.thd { text-align: left; overflow: hidden; text-indent: -9999px; white-space: nowrap; }
+.thide { display: none; }
+button.thd { border: 0 none; background-color: transparent; }
+.ico:before { vertical-align: middle; content: ""; }
+
 
 /* Grid */
 
@@ -223,7 +230,7 @@ body{background-image: none; background-attachment: initial; background-origin: 
 
 #divLogo{margin-top: 38px; margin-bottom: 0px; margin-left: -3px; width: 36%}
 
-#divSiteTitle {font-family: Allura, cursive; color: rgb(142, 176, 55); font-size: 45px; text-shadow: rgba(0, 0, 0, 0.298039) 2px 4px 3px; line-height: 40px; letter-spacing: 2px; text-transform: none; font-weight: bold; font-style: normal; text-decoration: none; margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;}
+#divSiteTitle {font-family: Allura, cursive; color: rgb(142, 176, 55); font-size: 46px; text-shadow: rgba(0, 0, 0, 0.298039) 2px 4px 3px; line-height: 40px; letter-spacing: 2px; text-transform: none; font-weight: bold; font-style: normal; text-decoration: none; margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;}
 
 #divTagLine {font-family: Aldrich, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 5px; color: rgb(140, 140, 140); text-shadow: none; padding-left: 0px; padding-right: 0px; font-weight: normal; font-style: normal; background-color: transparent; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;}
  
@@ -475,8 +482,18 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'Op
 }
 
 /*** CUSTOM ***/
-.sl_coms:before, .sl_views:before, .sl_modul:before, .sl_date:before, .sl_cat:before, .sl_faq:before, .sl_last:before, .sl_hits:before, .sl_outs:before, .sl_down:before, .sl_ed2k:before, .sl_http:before, .sl_plus:before, .sl_shop_add:before, .sl_shop_kasse:before, .sl_shop_total:before, .sl_post:before, .sl_votes:before, .sl_favor:before, .sl_n_day:before, .sl_n_days:before, .sl_n_week:before, .sl_n_act:before, .sl_n_deact:before, .sl_n_info:before, .sl_m_in:before, .sl_m_out:before, .sl_m_save:before {
+.sl_coms:before, .sl_views:before, .sl_modul:before, .sl_date:before, .sl_cat:before, .sl_faq:before, .sl_last:before, .sl_hits:before, .sl_outs:before, .sl_down:before, .sl_ed2k:before, .sl_http:before, .sl_plus:before, .sl_shop_add:before, .sl_shop_kasse:before, .sl_shop_total:before, .sl_post:before, .sl_votes:before, .sl_favor:before, .sl_n_day:before, .sl_n_days:before, .sl_n_week:before, .sl_n_act:before, .sl_n_deact:before, .sl_n_info:before, .sl_m_in:before, .sl_m_out:before, .sl_m_save:before, .sl_rate-num {
   display: none;
+}
+.sl_but, .sl_but_blue, .sl_but_red, .sl_but_green, .sl_but_read, .sl_but_navi, .sl_but_foot, .sl_but_back{border-radius: 0;}
+.meta,
+.meta a,
+.search-meta,
+.search-meta a{
+    font-size: 12px;
+}
+.meta .padd-r{
+    padding-right: 12px;
 }
 .meta ul,
 .statistic-info,
@@ -499,7 +516,8 @@ hr.no-margin{
 a.sl_but_read,
 a.sl_but,
 body .navi-menu li a,
-body a.sl_but{
+body a.sl_but,
+body a.sl_but_foot{
     line-height: 20px;
 }
 .sl_but_read:hover{
@@ -592,17 +610,20 @@ a.sl_but{
 .comment .com-right .com-top:before,
 .meta-foot:before,
 .vote-links:before,
+.meta:before,
 .comment:after,
 .comment .com-right .com-top:after,
 .meta-foot:after,
-.vote-links:after {
+.vote-links:after,
+.meta:after {
     content:"";
     display:table;
 }
 .comment:after,
 .comment .com-right .com-top:after,
 .meta-foot:after,
-.vote-links:after {
+.vote-links:after,
+.meta:after {
     clear:both;
 }
 .comment .com-right .com-top{
@@ -892,39 +913,19 @@ td.fl-col-stat { color: #556779; }
     margin: 6px 0 12px 0;
 }
 .progress-line div { height: 4px; border-radius: 2px; text-indent: -9999px; overflow: hidden; }
-.progress-1 div { 
-    border: 1px solid #0078a5; background-color: #5c9ade;
-    background: -moz-linear-gradient(top, #00adee 10%, #0078a5 90%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #00adee), color-stop(0.9, #0078a5));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
-}
-.progress-2 div { 
+.progress-1 div,
+.progress-2 div,
+.progress-3 div,
+.progress-4 div,
+.progress-5 div { 
     border: 1px solid #5c9425; background-color: #77af3f;
     background: -moz-linear-gradient(top, #8fc857 10%, #5c9425 90%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #8fc857), color-stop(0.9, #5c9425));
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fc857', endColorstr='#5c9425');
 }
-.progress-3 div { 
-    border: 1px solid #f47a20; background-color: #faa51a;
-    background: -moz-linear-gradient(top, #faa51a 10%, #f47a20 90%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #faa51a), color-stop(0.9, #f47a20));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
-}
-.progress-4 div { 
-    border: 1px solid #a92c2c; background-color: #c44747;
-    background: -moz-linear-gradient(top, #dd5f5f 10%, #a92c2c 90%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #dd5f5f), color-stop(0.9, #a92c2c));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd5f5f', endColorstr='#a92c2c');
-}
-.progress-5 div { 
-    border: 1px solid #8c2ca9; background-color: #8c2ca9;
-    background: -moz-linear-gradient(top, #bf5fdd 10%, #8c2ca9 90%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #bf5fdd), color-stop(0.9, #8c2ca9));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf5fdd', endColorstr='#8c2ca9');
-}
 .progress-info:after { content: ""; clear: both; display: block; }
 .progress-info span { float: left; }
-.progress-info .pull-right { float: right; color: #6e7c8b; }
+.progress-info .pull-right { float: right; color: #6e7c8b; font-size: 12px;}
 .progress-info b { font-weight: normal; }
 .search-meta a{
     line-height: 20px;
@@ -991,6 +992,12 @@ td.fl-col-stat { color: #556779; }
 }
 .table-acc-info{
     font-size: 14px;
+}
+input.sl_account{
+    width: auto;
+}
+select.sl_account{
+    width: 100%;
 }
 @media (max-width: 979px) and (min-width: 768px){
     body .row-fluid .span4,
